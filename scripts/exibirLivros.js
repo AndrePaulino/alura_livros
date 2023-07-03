@@ -1,6 +1,8 @@
 const livrosContainer = document.querySelector('#livros');
 
 const ExibirLivros = (livros) => {
+  livrosContainer.innerHTML = '';
+
   livros.forEach((livro) => {
     livrosContainer.innerHTML += `
     <div class="livro">

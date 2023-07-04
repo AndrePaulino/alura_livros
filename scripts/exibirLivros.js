@@ -1,6 +1,8 @@
 const livrosContainer = document.querySelector('#livros');
+const containerValorTotalDisponiveis = document.querySelector('#valor_total_livros_disponiveis');
 
 const ExibirLivros = (livros) => {
+  containerValorTotalDisponiveis.innerHTML = '';
   livrosContainer.innerHTML = '';
 
   livros.forEach((livro) => {
